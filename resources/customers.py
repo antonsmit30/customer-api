@@ -13,38 +13,36 @@ class Customer(Resource):
                         required=True,
                         help='Please specify probe port. If none specify 0'
                         )
-    parser.add_argument('devices',
-                        type=dict,
-                        required=False)
+
 
     # Get Request
     def get(self, name):
         item = customerModel.find_by_name(name)
         if item:
-            #return item.json()
-            return item
+            return item.json()
         #Else return error
-        return{'message': 'Item not found'}
-
+        return{'message': 'Customer not found'}
 
     # Post Method - We will add more functionality later
     def post(self, name):
 
         # Add functionality to check if customer already exists
+        if customerModel.find_by_name(name):
+            return{'message': 'Customer with name {} already exists'.format(name)}, 400
 
         # else
         data = Customer.parser.parse_args()
 
-        item = customerModel(name, probe=data['probe'], devices=data['devices'])
+        item = customerModel(name, probe=data['probe'])
 
         # Error handling
         try:
             print('item is: {}'.format(item))
             item.save_to_db()
         except:
-            return{'Message': 'and error occured'}, 500
+            return{'Message': 'and error occurred'}, 500
         else:
-            return{'Message': 'item saved successfully'}
+            return{'Message': 'Customer saved successfully'}
 
 
     # Delete method - WIP
@@ -60,4 +58,4 @@ class customerList(Resource):
 
     # Get all customers - wip
     def get(self):
-        pass
+        return {'items': list(map(lambda x: x.json(), customerModel.query.all()))}

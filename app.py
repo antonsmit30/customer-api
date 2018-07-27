@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_restful import Api
 
+from resources.customers import Customer, customerList
+
 
 # App Configs
 app=Flask(__name__)
@@ -16,6 +18,8 @@ def home():
 
 
 # Resources here to add ie app.add_resource
+api.add_resource(Customer, '/customer/<string:name>')
+api.add_resource(customerList, '/customers')
 
 
 # Init our app

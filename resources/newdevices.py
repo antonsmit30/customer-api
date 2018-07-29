@@ -41,7 +41,7 @@ class DeviceResource(Resource):
         # else
         data = DeviceResource.parser.parse_args()
 
-        customer_id = customerModel.find_id_by_name(self, name=data['customer_name'])
+        customer_id = DeviceModel.find_id_by_name(name=data['customer_name'])
 
         # Customer not exist
         if customer_id == None:

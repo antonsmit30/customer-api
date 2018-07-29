@@ -34,6 +34,13 @@ class DeviceModel(db.Model):
     def find_customer_id(self, name):
         return customerModel.find_by_name()
 
+    @classmethod
+    def find_id_by_name(cls, name):
+        try:
+            return customerModel.query.filter_by(name=name).first().id
+        except AttributeError:
+            return None
+
     def save_to_db(self):
         db.session.add(self)
         db.session.commit()

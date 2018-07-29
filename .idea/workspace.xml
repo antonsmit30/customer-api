@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="915d531a-7431-4867-a38e-136e76887293" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/helperscripts/retrieve_customer_by_name-py.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_device_to_customer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/newdevices.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/newdevices.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/newdevices.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/newdevices.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newdevices.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newdevices.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/newdevices.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
@@ -59,6 +51,15 @@
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -107,21 +108,6 @@
             <path>
               <item name="customer-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="customer-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="helperscripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="customer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="customer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -431,6 +417,13 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
